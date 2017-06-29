@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pesquise Os Professores Disponiveis</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<TABLE style='width:100%' bgcolor='#FFFFFF'><TR></TR></TABLE>
+<TABLE style='width:100%' bgcolor='#262626'><TR><TH style='width:62%' bgcolor='#d9d9d9'><FONT color='#333333'>Kevin Yuji Kobori</FONT></TH>
+<TH style='width:38%' bgcolor='#333333'><font size='+1' color='#FFFFFF'>UniCEUB</FONT></TH></TR></TABLE>
+<!--<TABLE style='width:100%' bgcolor='#262626'><TR><TH style='width:60%' bgcolor='#d9d9d9'><FONT color='#333333'>Kevin Yuji Kobori</FONT></TH>
+<TH style='width:40%' bgcolor='#333333'><font size='+1' color='#FFFFFF'>UniCEUB</FONT></TH></TR></TABLE>
+<!--<TABLE style='width:100%' bgcolor='#262626'><TR><TH style='width:100%' bgcolor='#d9d9d9'>
+	<div class="polaroid">
+   		<img src="jhonwick-fundo.jpg" alt="capa-jogos-mortais" width="2000" height="100">
+	</div></TH></TR></TABLE>
+<TABLE style='width:100%' bgcolor='#FFFFFF'><TR></TR></TABLE>
+<TABLE style='width:100%' bgcolor='#262626'><TR><TH style='width:62%' bgcolor='#d9d9d9'><FONT color='#333333'>IMDB</FONT></TH>
+<TABLE style='width:100%' bgcolor='#FFFFFF'><TR></TR></TABLE>-->
+
+<TABLE style='width:35%' bgcolor='#ffcc00'><TR><TH style='width:100%' bgcolor='#333333'><FONT size='+1' color='#FFFFFF'>EDITE OS DADOS FAZENDO LOGIN COMO ADMINISTRADOR</FONT></TH></TR></TABLE>
+
+<TABLE style='width:35%'>
+<TR>
+<form action='/TrabalhoFinal_Kevin_Yuji_Kobori_IMDb/login' method='POST'>
+<TH style='width:15%' bgcolor='#333333'><FONT color='#FFFFFF'>Usuário: </FONT></TH>
+<TH style='width:15%' bgcolor='#ffcc00'><input style='width:99%' type='text' name='usuario'></TD>
+<TD style='width:05%' bgcolor='#333333'></TD>
+</TR>
+<TR>
+<TH style='width:15%' bgcolor='#333333'><FONT color='#FFFFFF'>Senha: </FONT></TH>
+<TH style='width:15%' bgcolor='#ffcc00'><input style='width:99%' type='password' name='senha'></TH>
+<TD style='width:05%' bgcolor='#262626'><input style='width:100%' type='submit' value='Logar'></TD>
+</form>
+</TR>
+</TABLE>
+
+<br>
+
+<!-- --------------------------------------------------------------------------------------------------- --> 
+
+<TABLE style='width:35%' bgcolor='#ffcc00'><TR><TH style='width:100%' bgcolor='#333333'><FONT size='+1' color='#FFFFFF'>BUSCA IMDb</FONT></TH></TR></TABLE>
+
+<table style='width:35%'>
+
+<!-- --------------------------------------------------------------------------------------------------- --> 
+
+<TR>
+<form action="/TrabalhoFinal_Kevin_Yuji_Kobori_IMDb/barra-tipo-consulta">
+<TH bgcolor='#333333' style='width:15%'>
+ <input type="text" name="dados">
+ </TH>
+  <TH bgcolor='#333333' style='width:15%'>
+  <select class="w3-select w3-border" style='width:100%' name="tipoConsulta">
+  	<option value="FILMES" selected>Pesquise Filmes</option>
+	<option value="" disabled>Consultar Filmes por....</option>
+	<option value="Titulo em Portugues">Titulo em Portugues</option>
+	<option value="Titulo em Ingles">Titulo em Ingles</option>
+	<option value="Ano">Ano</option>
+	<option value="Pontuacao">Pontuacao</option>
+	<option value="Diretores">Diretores</option>
+	<option value="Atores">Atores</option>
+	<option value="Genero">Genero</option> <!-- --------------------------------------------------------------------------------------------------- --> 
+	<option value="Todos os Filmes">Todos os Filmes</option>
+  </select>
+ </TH>
+  <TH bgcolor='#333333' style='width:05%'>
+<button class="button button5" style='width:100%' type="submit" name="barraConsulta" value="Barra de Filmes">Buscar</button>
+ </TH>
+</form>
+</TR>
+</table>
+</html>
